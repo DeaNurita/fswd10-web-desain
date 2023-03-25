@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+
+.section-navbar{
+    background-color: rgb(13, 13, 103);
+}
+
+.navbar-nav{
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+
+.ul-tab-1{
+    list-style: none;
+}
+
+.ul-tab-1 li a{    
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ul-tab-2{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.ul-tab-2 li a{
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;    
+}
+
+.ul-tab-2 li a:hover{
+    border-bottom: 2px solid;
+}
+
+.section-jumbotron{
+    background-image: linear-gradient(45deg, #7878d8, #62539d);
+}
+
+.wrapper-jumbotron{
+    display: flex;    
+    padding: 1rem 5rem;
+    align-items: center;               
+}
+
+.left{
+    padding: .25rem 3rem 2rem 0rem;
+}
+
+.right{
+    padding: 2.5rem 0rem 2rem 7rem;            
+}
+
+.left h2{
+    color: white;
+    font-size: 3.4rem;
+    line-height:1.2;
+    margin-bottom: 1.5rem;    
+}
+
+.left p{
+    color: white;
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+.left button{
+    background-color: steelblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.section-main{
+    display: flex;
+    background-color: aliceblue;        
+}
+
+.main{
+    width: 85%;
+    height: 350px;
+}
+
+.section-deskripsi h3{
+    color: black;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 2rem;            
+}
+
+.wrapper-card{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;        
+}
+
+.card{    
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;       
+}
+
+.images-movie{
+    width: 30%;
+}
+
+.images-movie img{
+    width: 100%;    
+}
+
+.card h5{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card button{
+    background-color: steelblue;
+    padding: 7px 14px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.card p{
+    font-size: smaller;
+    margin-top: .4rem;
+}
+
+.card:hover{
+    animation-name: animate;
+    animation-duration: 0.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0.8);
+        transition: 1s;
+    }
+    100%{
+        transform: scale(1);
+        transition: 1s;
+    }
+}
+
+.card-kaitan{ 
+    width: 15%;
+    height: 350px;       
+    align-self: baseline;
+    text-align: unset;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.card-kaitan h3{
+    font-size: 1rem;
+}
+
+.card-kaitan li a{
+    color: black;
+    margin-right: 1rem;
+    text-decoration: none;    
+}
+
+.card-kaitan li a:hover{
+    border-bottom: 2px solid;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .wrapper-jumbotron{
+        flex-direction: column-reverse;        
+    }
+    .ul-tab-2{
+        display: flex;
+        flex-direction: column;
+    }    
+    .right{
+        padding: 2rem 0rem 2rem 0rem;
+    }
+    .right img{
+        width: 100%;
+    }
+    .navbar-nav{
+        flex-direction: column;
+    }    
+    .section-main{
+        flex-direction: column;
+    }
+    .main{
+        width: 100%;
+        height: 80%;
+    }
+    .wrapper-card{
+        flex-direction: column;
+        padding: 1rem 5rem;
+    }
+    .card{
+        margin: 1.5rem 0rem 1.5rem;
+    }
+    .card-kaitan{
+        width: 100%;        
+        height: 20%;     
+        margin: inherit;
+        padding: 0rem 0rem 2rem 3rem;        
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    .ul-tab-1 li a{            
+        font-size: 1rem;
+        padding-top: 0.5rem;
+    }
+    .ul-tab-2 li a{            
+        font-size: 1rem;
+        align-items: center;
+    }
+    .left h2{        
+        font-size: 2rem;
+    }
+    .left p{        
+        width: 88%;
+    }
+    .left button{        
+        font-size: 1rem;
+    }
+    .right{        
+        width: 100%;
+    }
+    .right img{        
+        width: 125%;
+    }
+    .section-main{
+        flex-direction: column;
+    }        
+    .main{
+        width: 100%;
+        height: 80%;
+    }
+    .wrapper-card{       
+        padding: 1rem 2rem;
+    }
+    .card{
+        margin: 0rem 1rem 0rem;
+    }
+    .card-kaitan{
+        width: 100%;        
+        height: 20%;     
+        margin: inherit;
+        padding: 0rem 0rem 2rem 3rem;        
+    }  
+}
+
+@media only screen and (min-width: 992px) {
+    .section-navbar{
+        width: 100%;
+    }
+    .left h2{        
+        font-size: 2rem;
+    }
+    .left p{        
+        width: 88%;
+    }
+    .left button{        
+        font-size: 1rem;
+    }
+    .right{        
+        width: 100%;
+    }
+    .right img{        
+        width: 100%;
+    }
+    .section-main{
+        flex-direction: row;
+    }        
+    .main{
+        width: 85%;
+        height: 350px;
+    }
+    .wrapper-card{       
+        padding: 1rem 2rem;
+    }
+    .card{
+        margin: 0rem 1rem 0rem;
+    }
+    .card-kaitan{
+        width: 15%;        
+        height: 350px;
+        margin: inherit;
+        padding: 2rem 5rem 2rem 0rem;              
+    }         
+}
+
+@media only screen and (min-width: 1200px) {
+    .left h2{      
+        font-size: 3.4rem;        
+    }
+    .left p{        
+        width: 60%;
+    }
+    .left button{        
+        font-size: 1.5rem;
+    }
+    .card-kaitan{
+        width: 15%;        
+        height: 350px;
+        margin: inherit;
+        padding: 2rem 6rem 2rem 1rem;              
+    }      
+}
